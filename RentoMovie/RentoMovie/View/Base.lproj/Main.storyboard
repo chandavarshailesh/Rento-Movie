@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VG7-Xd-ffx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rento Movie-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MovieListViewController" customModule="RentoMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="17U-cB-vaw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="cqT-v4-npz">
+                                    <size key="itemSize" width="348" height="127"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieListCell" id="Dy1-SB-ls8" customClass="MovieListCollectionViewCell" customModule="RentoMovie" customModuleProvider="target">
+                                        <rect key="frame" x="13.5" y="0.0" width="348" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="348" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madmax" translatesAutoresizingMaskIntoConstraints="NO" id="Oi4-9k-oTe">
+                                                    <rect key="frame" x="15" y="15" width="74.5" height="96"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="96" id="TQp-kM-eAM"/>
+                                                        <constraint firstAttribute="width" constant="74.5" id="qNc-dO-Rhc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT5-FK-vgt">
+                                                    <rect key="frame" x="34.5" y="103" width="36" height="18"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="0.18222656249999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" priority="500" constant="36" id="azy-lH-1At"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="The Greatest showman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYt-ak-2Ey">
+                                                    <rect key="frame" x="104.5" y="20" width="228.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <color key="highlightedColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-PF-oi9">
+                                                    <rect key="frame" x="104.5" y="48" width="228.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-sF-pRO">
+                                                    <rect key="frame" x="104" y="97.5" width="229" height="43"/>
+                                                    <string key="text">Tom Hardy,Charlize Theron,Hugh Keays-Byrne,Tom Hardy,Charlize Theron,Hugh Keays-Byrne,Tom Hardy,Charlize Theron,Hugh Keays-Byrne,</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certificate : U/A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-zg-fXL">
+                                                    <rect key="frame" x="104" y="72.5" width="228.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="PcL-sF-pRO" firstAttribute="trailing" secondItem="f1t-PF-oi9" secondAttribute="trailing" id="350-XD-L6Z"/>
+                                            <constraint firstItem="i7e-zg-fXL" firstAttribute="top" secondItem="f1t-PF-oi9" secondAttribute="bottom" constant="10" id="9uI-n6-du4"/>
+                                            <constraint firstItem="i7e-zg-fXL" firstAttribute="leading" secondItem="f1t-PF-oi9" secondAttribute="leading" id="CSk-id-Nqa"/>
+                                            <constraint firstItem="f1t-PF-oi9" firstAttribute="leading" secondItem="FYt-ak-2Ey" secondAttribute="leading" id="KQc-xt-rLE"/>
+                                            <constraint firstItem="i7e-zg-fXL" firstAttribute="trailing" secondItem="f1t-PF-oi9" secondAttribute="trailing" id="NCl-Yq-tZX"/>
+                                            <constraint firstItem="PcL-sF-pRO" firstAttribute="leading" secondItem="f1t-PF-oi9" secondAttribute="leading" id="Nbm-gb-30g"/>
+                                            <constraint firstItem="f1t-PF-oi9" firstAttribute="top" secondItem="FYt-ak-2Ey" secondAttribute="bottom" constant="10" id="UWl-MM-vOE"/>
+                                            <constraint firstItem="FYt-ak-2Ey" firstAttribute="top" secondItem="Dy1-SB-ls8" secondAttribute="top" constant="20" id="XjU-cx-pF1"/>
+                                            <constraint firstItem="f1t-PF-oi9" firstAttribute="trailing" secondItem="FYt-ak-2Ey" secondAttribute="trailing" id="Z8t-aX-9zg"/>
+                                            <constraint firstItem="PcL-sF-pRO" firstAttribute="top" secondItem="i7e-zg-fXL" secondAttribute="bottom" constant="10" id="dSf-zE-ZRx"/>
+                                            <constraint firstItem="Oi4-9k-oTe" firstAttribute="leading" secondItem="Dy1-SB-ls8" secondAttribute="leading" constant="15" id="glf-Rj-c0U"/>
+                                            <constraint firstAttribute="trailing" secondItem="PcL-sF-pRO" secondAttribute="trailing" constant="15" id="i9w-70-iv5"/>
+                                            <constraint firstItem="sT5-FK-vgt" firstAttribute="centerX" secondItem="Oi4-9k-oTe" secondAttribute="centerX" id="mdX-JW-48I"/>
+                                            <constraint firstAttribute="trailing" secondItem="FYt-ak-2Ey" secondAttribute="trailing" constant="15" id="nSK-G1-M9V"/>
+                                            <constraint firstItem="FYt-ak-2Ey" firstAttribute="leading" secondItem="Oi4-9k-oTe" secondAttribute="trailing" constant="15" id="o3z-TY-9tK"/>
+                                            <constraint firstItem="Oi4-9k-oTe" firstAttribute="top" secondItem="Dy1-SB-ls8" secondAttribute="top" constant="15" id="p6t-HK-Xmz"/>
+                                            <constraint firstItem="sT5-FK-vgt" firstAttribute="bottom" secondItem="Oi4-9k-oTe" secondAttribute="bottom" constant="10" id="rc5-ah-3kh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="certificateLabel" destination="i7e-zg-fXL" id="m8I-hK-RZX"/>
+                                            <outlet property="ratingLabel" destination="sT5-FK-vgt" id="ybl-3n-t6e"/>
+                                            <outlet property="releaseDateLabel" destination="f1t-PF-oi9" id="EPz-OA-sEj"/>
+                                            <outlet property="synopsisLabel" destination="PcL-sF-pRO" id="nMF-a7-vqz"/>
+                                            <outlet property="thumbnailImageView" destination="Oi4-9k-oTe" id="aaJ-Mh-ZHY"/>
+                                            <outlet property="titleLabel" destination="FYt-ak-2Ey" id="HGW-9z-mNw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="17U-cB-vaw" secondAttribute="bottom" id="kCO-0r-Faz"/>
+                            <constraint firstItem="17U-cB-vaw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="no0-bK-vr3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="17U-cB-vaw" secondAttribute="trailing" id="qKg-pn-HQm"/>
+                            <constraint firstItem="17U-cB-vaw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s42-Nz-rPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rento Movie" id="nDT-Wx-3uJ"/>
+                    <connections>
+                        <outlet property="movieListCollectionView" destination="17U-cB-vaw" id="TtU-iN-sUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fbm-hz-dqJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="31j-tO-YFA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="69f-Vd-3t9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aTU-uM-Vcf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S4p-zF-bzw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PyM-VT-q4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="3"/>
+        </scene>
+        <!--Loader View Controller-->
+        <scene sceneID="GXd-fI-iVd">
+            <objects>
+                <viewController id="VG7-Xd-ffx" customClass="LoaderViewController" customModule="RentoMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UtL-GT-Grc"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMD-L1-XZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqw-NG-kc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlayBackground-1" translatesAutoresizingMaskIntoConstraints="NO" id="iS4-hP-vtf">
+                                <rect key="frame" x="-100" y="-100" width="575" height="867"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-YX-QKi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUQ-qI-vc8" customClass="CircularLoaderView" customModule="RentoMovie" customModuleProvider="target">
+                                <rect key="frame" x="98.5" y="204.5" width="178" height="178"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endAngle">
+                                        <real key="value" value="6.2800000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerCircleLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleLineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2WJ-Ka-npv">
+                                <rect key="frame" x="127.5" y="233.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="BOO-2g-q3r"/>
+                                    <constraint firstAttribute="width" constant="120" id="WPo-JH-qeZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENTO MOVIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXH-E2-MdZ">
+                                <rect key="frame" x="38" y="408.5" width="299" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20781612399999999" green="0.2078586519" blue="0.2078134418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fUQ-qI-vc8" firstAttribute="bottom" secondItem="2WJ-Ka-npv" secondAttribute="bottom" constant="29" id="Dil-ff-5MH"/>
+                            <constraint firstItem="iS4-hP-vtf" firstAttribute="top" secondItem="iqw-NG-kc4" secondAttribute="top" constant="-100" id="F6c-0V-d0h"/>
+                            <constraint firstItem="jXH-E2-MdZ" firstAttribute="top" secondItem="2WJ-Ka-npv" secondAttribute="bottom" constant="55" id="F7O-A5-diV"/>
+                            <constraint firstItem="fUQ-qI-vc8" firstAttribute="top" secondItem="2WJ-Ka-npv" secondAttribute="top" constant="-29" id="IUk-Gn-dJB"/>
+                            <constraint firstItem="2WJ-Ka-npv" firstAttribute="centerX" secondItem="iqw-NG-kc4" secondAttribute="centerX" id="Idp-85-tmw"/>
+                            <constraint firstAttribute="trailing" secondItem="iS4-hP-vtf" secondAttribute="trailing" constant="-100" id="LFH-uB-osB"/>
+                            <constraint firstItem="TMQ-YX-QKi" firstAttribute="leading" secondItem="ysI-1J-EDP" secondAttribute="leading" id="LbB-5Z-Dhe"/>
+                            <constraint firstItem="2WJ-Ka-npv" firstAttribute="centerY" secondItem="iqw-NG-kc4" secondAttribute="centerY" constant="-40" id="SWA-J0-ece"/>
+                            <constraint firstItem="iS4-hP-vtf" firstAttribute="leading" secondItem="iqw-NG-kc4" secondAttribute="leading" constant="-100" id="W20-By-Nmr"/>
+                            <constraint firstItem="fUQ-qI-vc8" firstAttribute="leading" secondItem="2WJ-Ka-npv" secondAttribute="leading" constant="-29" id="Wm2-bq-YSz"/>
+                            <constraint firstItem="TMQ-YX-QKi" firstAttribute="top" secondItem="iqw-NG-kc4" secondAttribute="top" id="a3T-jA-2lF"/>
+                            <constraint firstItem="fUQ-qI-vc8" firstAttribute="trailing" secondItem="2WJ-Ka-npv" secondAttribute="trailing" constant="29" id="bhe-wT-OLJ"/>
+                            <constraint firstItem="ysI-1J-EDP" firstAttribute="trailing" secondItem="TMQ-YX-QKi" secondAttribute="trailing" id="enl-1H-fAJ"/>
+                            <constraint firstItem="tMD-L1-XZv" firstAttribute="top" secondItem="TMQ-YX-QKi" secondAttribute="bottom" id="nLj-jz-uk7"/>
+                            <constraint firstItem="jXH-E2-MdZ" firstAttribute="centerX" secondItem="2WJ-Ka-npv" secondAttribute="centerX" id="vBK-vB-TnE"/>
+                            <constraint firstAttribute="bottom" secondItem="iS4-hP-vtf" secondAttribute="bottom" constant="-100" id="vcL-5q-lRf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ysI-1J-EDP"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="circularLoaderView" destination="fUQ-qI-vc8" id="Vmw-0D-ogY"/>
+                        <outlet property="overlayBottomConstraint" destination="vcL-5q-lRf" id="Yhu-WE-mZB"/>
+                        <outlet property="overlayRightConstraint" destination="LFH-uB-osB" id="56c-5x-P0H"/>
+                        <outlet property="overlayTopConstraint" destination="F6c-0V-d0h" id="3p3-N2-GKL"/>
+                        <outlet property="overlayleftConstraint" destination="W20-By-Nmr" id="Vor-3A-b6s"/>
+                        <segue destination="31j-tO-YFA" kind="presentation" identifier="movieListScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ZfI-Pn-Sjs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAA-aE-zil" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-900" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="madmax" width="184" height="273"/>
+        <image name="overlayBackground-1" width="700" height="767"/>
+        <image name="splashLogo" width="260" height="260"/>
+    </resources>
+</document>

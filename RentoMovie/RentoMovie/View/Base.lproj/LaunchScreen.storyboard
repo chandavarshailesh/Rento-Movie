@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlayBackground-1" translatesAutoresizingMaskIntoConstraints="NO" id="WjU-Po-mQc">
+                                <rect key="frame" x="-100" y="-100" width="575" height="867"/>
+                                <color key="backgroundColor" red="0.29019591968911918" green="0.29019591968911918" blue="0.29019591968911918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWq-jc-0GF">
+                                <rect key="frame" x="-100" y="-100" width="575" height="867"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-9n-vnd">
+                                <rect key="frame" x="127.5" y="233.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="fZi-gh-JKM"/>
+                                    <constraint firstAttribute="width" constant="120" id="u6X-lp-Z6x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENTO MOVIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXV-mp-Op0">
+                                <rect key="frame" x="38" y="408.5" width="299" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QXV-mp-Op0" firstAttribute="centerX" secondItem="fPY-9n-vnd" secondAttribute="centerX" id="0km-y8-S0b"/>
+                            <constraint firstItem="SWq-jc-0GF" firstAttribute="trailing" secondItem="WjU-Po-mQc" secondAttribute="trailing" id="7WE-tc-76y"/>
+                            <constraint firstItem="QXV-mp-Op0" firstAttribute="top" secondItem="fPY-9n-vnd" secondAttribute="bottom" constant="55" id="Dod-OW-sJf"/>
+                            <constraint firstItem="SWq-jc-0GF" firstAttribute="bottom" secondItem="WjU-Po-mQc" secondAttribute="bottom" id="G6n-cC-7yh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WjU-Po-mQc" secondAttribute="trailing" constant="-100" id="GlB-HA-Bfo"/>
+                            <constraint firstItem="fPY-9n-vnd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="OLx-Kq-MJ6"/>
+                            <constraint firstItem="fPY-9n-vnd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oqh-fE-iET"/>
+                            <constraint firstItem="SWq-jc-0GF" firstAttribute="top" secondItem="WjU-Po-mQc" secondAttribute="top" id="Pj0-sX-bh3"/>
+                            <constraint firstItem="WjU-Po-mQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-100" id="SgS-kn-qMP"/>
+                            <constraint firstItem="WjU-Po-mQc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-100" id="djk-Bf-TJT"/>
+                            <constraint firstItem="SWq-jc-0GF" firstAttribute="leading" secondItem="WjU-Po-mQc" secondAttribute="leading" id="mnY-qe-VZh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WjU-Po-mQc" secondAttribute="bottom" constant="-100" id="ptt-DI-S7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="376"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="overlayBackground-1" width="700" height="767"/>
+        <image name="splashLogo" width="260" height="260"/>
+    </resources>
+</document>

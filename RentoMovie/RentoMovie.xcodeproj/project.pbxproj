@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F274314D21BAB06300DFAB1D /* Kingfisher.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F274313421BAB05400DFAB1D /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F274314F21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F274314E21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift */; };
+		F274315521BB051700DFAB1D /* UIScrollView+BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F274315321BB051700DFAB1D /* UIScrollView+BottomRefreshControl.m */; };
+		F274315721BC5AB500DFAB1D /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F274315621BC5AB500DFAB1D /* Rechability.swift */; };
+		F28DD19321B9A553007808D5 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19221B9A553007808D5 /* CircularLoaderView.swift */; };
+		F28DD19521B9A7AD007808D5 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19421B9A7AD007808D5 /* LoaderViewController.swift */; };
+		F28DD19821B9A8A5007808D5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19721B9A8A5007808D5 /* Utility.swift */; };
+		F28DD19B21B9A92C007808D5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19A21B9A92C007808D5 /* RequestManager.swift */; };
+		F28DD19E21BA4DFD007808D5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19D21BA4DFD007808D5 /* Movie.swift */; };
+		F28DD1A121BA5C93007808D5 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD1A021BA5C93007808D5 /* MovieListPresenter.swift */; };
+		F29C989021BD95E80050E602 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19D21BA4DFD007808D5 /* Movie.swift */; };
+		F29C989121BD95F90050E602 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD1A021BA5C93007808D5 /* MovieListPresenter.swift */; };
+		F29C989221BD960E0050E602 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19721B9A8A5007808D5 /* Utility.swift */; };
+		F29C989321BD963B0050E602 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19A21B9A92C007808D5 /* RequestManager.swift */; };
+		F29C989421BD96840050E602 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F274315621BC5AB500DFAB1D /* Rechability.swift */; };
+		F29C98A321BD9ECF0050E602 /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19221B9A553007808D5 /* CircularLoaderView.swift */; };
+		F29C98AF21BD9ED40050E602 /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F274314E21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift */; };
+		F29C98B121BD9EE20050E602 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28DD19421B9A7AD007808D5 /* LoaderViewController.swift */; };
+		F29C98B221BDA04D0050E602 /* RentoMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDCC8721B8F1E000C01AD3 /* RentoMovieTests.swift */; };
+		F2DDCC7321B8F1DE00C01AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDCC7221B8F1DE00C01AD3 /* AppDelegate.swift */; };
+		F2DDCC7521B8F1DE00C01AD3 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDCC7421B8F1DE00C01AD3 /* MovieListViewController.swift */; };
+		F2DDCC7821B8F1DE00C01AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DDCC7621B8F1DE00C01AD3 /* Main.storyboard */; };
+		F2DDCC7A21B8F1E000C01AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DDCC7921B8F1E000C01AD3 /* Assets.xcassets */; };
+		F2DDCC7D21B8F1E000C01AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DDCC7B21B8F1E000C01AD3 /* LaunchScreen.storyboard */; };
+		F2DDCC9321B8F1E000C01AD3 /* RentoMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDCC9221B8F1E000C01AD3 /* RentoMovieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F274313321BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D351AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		F274313521BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49D61BEDA67C00CE335D;
+			remoteInfo = "Kingfisher-tvOS";
+		};
+		F274313721BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944481C3D01B20088C3E7;
+			remoteInfo = "Kingfisher-macOS";
+		};
+		F274313921BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D16799EB1C4E74460020FD12;
+			remoteInfo = "Kingfisher-watchOS";
+		};
+		F274313B21BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D0B1AD2CFA600CFC3EB;
+			remoteInfo = "Kingfisher-Demo";
+		};
+		F274313D21BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D13F49C21BEDA53F00CE335D;
+			remoteInfo = "Kingfisher-tvOS-Demo";
+		};
+		F274313F21BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B2944551C3D03880088C3E7;
+			remoteInfo = "Kingfisher-macOS-Demo";
+		};
+		F274314121BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1679A391C4E78B20020FD12;
+			remoteInfo = "Kingfisher-watchOS-Demo";
+		};
+		F274314321BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1679A451C4E78B20020FD12;
+			remoteInfo = "Kingfisher-watchOS-Demo Extension";
+		};
+		F274314521BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D1ED2D3F1AD2D09F00CFC3EB;
+			remoteInfo = KingfisherTests;
+		};
+		F274314721BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B37667F1C478F940001443F;
+			remoteInfo = "KingfisherTests-tvOS";
+		};
+		F274314921BAB05400DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D10EC2311C3D632300A4211C;
+			remoteInfo = "KingfisherTests-macOS";
+		};
+		F274314B21BAB05B00DFAB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
+			remoteInfo = "Kingfisher-iOS";
+		};
+		F2DDCC8421B8F1E000C01AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DDCC6721B8F1DE00C01AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDCC6E21B8F1DE00C01AD3;
+			remoteInfo = RentoMovie;
+		};
+		F2DDCC8F21B8F1E000C01AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DDCC6721B8F1DE00C01AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDCC6E21B8F1DE00C01AD3;
+			remoteInfo = RentoMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F274312121BAAF3B00DFAB1D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F274314D21BAB06300DFAB1D /* Kingfisher.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = "Kingfisher-master/Kingfisher.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F274314E21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F274315021BB04DE00DFAB1D /* RentoMovie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RentoMovie-Bridging-Header.h"; sourceTree = "<group>"; };
+		F274315321BB051700DFAB1D /* UIScrollView+BottomRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BottomRefreshControl.m"; sourceTree = "<group>"; };
+		F274315421BB051700DFAB1D /* UIScrollView+BottomRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BottomRefreshControl.h"; sourceTree = "<group>"; };
+		F274315621BC5AB500DFAB1D /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		F28DD19221B9A553007808D5 /* CircularLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		F28DD19421B9A7AD007808D5 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		F28DD19721B9A8A5007808D5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		F28DD19A21B9A92C007808D5 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		F28DD19D21BA4DFD007808D5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F28DD1A021BA5C93007808D5 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		F2DDCC6F21B8F1DE00C01AD3 /* RentoMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentoMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDCC7221B8F1DE00C01AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2DDCC7421B8F1DE00C01AD3 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		F2DDCC7721B8F1DE00C01AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2DDCC7921B8F1E000C01AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2DDCC7C21B8F1E000C01AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2DDCC7E21B8F1E000C01AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DDCC8321B8F1E000C01AD3 /* RentoMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentoMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDCC8721B8F1E000C01AD3 /* RentoMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentoMovieTests.swift; sourceTree = "<group>"; };
+		F2DDCC8921B8F1E000C01AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2DDCC8E21B8F1E000C01AD3 /* RentoMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentoMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDCC9221B8F1E000C01AD3 /* RentoMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentoMovieUITests.swift; sourceTree = "<group>"; };
+		F2DDCC9421B8F1E000C01AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2DDCC6C21B8F1DE00C01AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC8021B8F1E000C01AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC8B21B8F1E000C01AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F274306C21BAAD3B00DFAB1D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F274312521BAB05400DFAB1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F274313421BAB05400DFAB1D /* Kingfisher.framework */,
+				F274313621BAB05400DFAB1D /* Kingfisher.framework */,
+				F274313821BAB05400DFAB1D /* Kingfisher.framework */,
+				F274313A21BAB05400DFAB1D /* Kingfisher.framework */,
+				F274313C21BAB05400DFAB1D /* Kingfisher-Demo.app */,
+				F274313E21BAB05400DFAB1D /* Kingfisher-tvOS-Demo.app */,
+				F274314021BAB05400DFAB1D /* Kingfisher-macOS-Demo.app */,
+				F274314221BAB05400DFAB1D /* Kingfisher-watchOS-Demo.app */,
+				F274314421BAB05400DFAB1D /* Kingfisher-watchOS-Demo Extension.appex */,
+				F274314621BAB05400DFAB1D /* KingfisherTests.xctest */,
+				F274314821BAB05400DFAB1D /* KingfisherTests-tvOS.xctest */,
+				F274314A21BAB05400DFAB1D /* KingfisherTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F28DD19121B9A527007808D5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC7421B8F1DE00C01AD3 /* MovieListViewController.swift */,
+				F28DD19421B9A7AD007808D5 /* LoaderViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F28DD19621B9A888007808D5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F28DD19721B9A8A5007808D5 /* Utility.swift */,
+				F274315421BB051700DFAB1D /* UIScrollView+BottomRefreshControl.h */,
+				F274315321BB051700DFAB1D /* UIScrollView+BottomRefreshControl.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F28DD19921B9A902007808D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28DD19D21BA4DFD007808D5 /* Movie.swift */,
+				F28DD19A21B9A92C007808D5 /* RequestManager.swift */,
+				F274315621BC5AB500DFAB1D /* Rechability.swift */,
+				F274315021BB04DE00DFAB1D /* RentoMovie-Bridging-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F28DD19F21BA5C11007808D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F28DD1A021BA5C93007808D5 /* MovieListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F29C989521BD990D0050E602 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC7221B8F1DE00C01AD3 /* AppDelegate.swift */,
+				F2DDCC7921B8F1E000C01AD3 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F2DDCC6621B8F1DE00C01AD3 = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC7121B8F1DE00C01AD3 /* RentoMovie */,
+				F2DDCC8621B8F1E000C01AD3 /* RentoMovieTests */,
+				F2DDCC9121B8F1E000C01AD3 /* RentoMovieUITests */,
+				F2DDCC7021B8F1DE00C01AD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2DDCC7021B8F1DE00C01AD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC6F21B8F1DE00C01AD3 /* RentoMovie.app */,
+				F2DDCC8321B8F1E000C01AD3 /* RentoMovieTests.xctest */,
+				F2DDCC8E21B8F1E000C01AD3 /* RentoMovieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2DDCC7121B8F1DE00C01AD3 /* RentoMovie */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC7E21B8F1E000C01AD3 /* Info.plist */,
+				F28DD19921B9A902007808D5 /* Model */,
+				F2DDCCA021B8F4EA00C01AD3 /* View */,
+				F28DD19F21BA5C11007808D5 /* Presenter */,
+				F28DD19121B9A527007808D5 /* ViewController */,
+				F29C989521BD990D0050E602 /* Resource */,
+				F274306C21BAAD3B00DFAB1D /* Library */,
+				F28DD19621B9A888007808D5 /* Utility */,
+			);
+			path = RentoMovie;
+			sourceTree = "<group>";
+		};
+		F2DDCC8621B8F1E000C01AD3 /* RentoMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC8721B8F1E000C01AD3 /* RentoMovieTests.swift */,
+				F2DDCC8921B8F1E000C01AD3 /* Info.plist */,
+			);
+			path = RentoMovieTests;
+			sourceTree = "<group>";
+		};
+		F2DDCC9121B8F1E000C01AD3 /* RentoMovieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDCC9221B8F1E000C01AD3 /* RentoMovieUITests.swift */,
+				F2DDCC9421B8F1E000C01AD3 /* Info.plist */,
+			);
+			path = RentoMovieUITests;
+			sourceTree = "<group>";
+		};
+		F2DDCCA021B8F4EA00C01AD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F28DD19221B9A553007808D5 /* CircularLoaderView.swift */,
+				F274314E21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift */,
+				F2DDCC7B21B8F1E000C01AD3 /* LaunchScreen.storyboard */,
+				F2DDCC7621B8F1DE00C01AD3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2DDCC6E21B8F1DE00C01AD3 /* RentoMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDCC9721B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovie" */;
+			buildPhases = (
+				F2DDCC6B21B8F1DE00C01AD3 /* Sources */,
+				F2DDCC6C21B8F1DE00C01AD3 /* Frameworks */,
+				F2DDCC6D21B8F1DE00C01AD3 /* Resources */,
+				F274312121BAAF3B00DFAB1D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F274314C21BAB05B00DFAB1D /* PBXTargetDependency */,
+			);
+			name = RentoMovie;
+			productName = RentoMovie;
+			productReference = F2DDCC6F21B8F1DE00C01AD3 /* RentoMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2DDCC8221B8F1E000C01AD3 /* RentoMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDCC9A21B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovieTests" */;
+			buildPhases = (
+				F2DDCC7F21B8F1E000C01AD3 /* Sources */,
+				F2DDCC8021B8F1E000C01AD3 /* Frameworks */,
+				F2DDCC8121B8F1E000C01AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DDCC8521B8F1E000C01AD3 /* PBXTargetDependency */,
+			);
+			name = RentoMovieTests;
+			productName = RentoMovieTests;
+			productReference = F2DDCC8321B8F1E000C01AD3 /* RentoMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2DDCC8D21B8F1E000C01AD3 /* RentoMovieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDCC9D21B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovieUITests" */;
+			buildPhases = (
+				F2DDCC8A21B8F1E000C01AD3 /* Sources */,
+				F2DDCC8B21B8F1E000C01AD3 /* Frameworks */,
+				F2DDCC8C21B8F1E000C01AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DDCC9021B8F1E000C01AD3 /* PBXTargetDependency */,
+			);
+			name = RentoMovieUITests;
+			productName = RentoMovieUITests;
+			productReference = F2DDCC8E21B8F1E000C01AD3 /* RentoMovieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2DDCC6721B8F1DE00C01AD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Shailesh.Chandavar;
+				TargetAttributes = {
+					F2DDCC6E21B8F1DE00C01AD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					F2DDCC8221B8F1E000C01AD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F2DDCC6E21B8F1DE00C01AD3;
+					};
+					F2DDCC8D21B8F1E000C01AD3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F2DDCC6E21B8F1DE00C01AD3;
+					};
+				};
+			};
+			buildConfigurationList = F2DDCC6A21B8F1DE00C01AD3 /* Build configuration list for PBXProject "RentoMovie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2DDCC6621B8F1DE00C01AD3;
+			productRefGroup = F2DDCC7021B8F1DE00C01AD3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F274312521BAB05400DFAB1D /* Products */;
+					ProjectRef = F274312421BAB05400DFAB1D /* Kingfisher.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F2DDCC6E21B8F1DE00C01AD3 /* RentoMovie */,
+				F2DDCC8221B8F1E000C01AD3 /* RentoMovieTests */,
+				F2DDCC8D21B8F1E000C01AD3 /* RentoMovieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F274313421BAB05400DFAB1D /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = F274313321BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274313621BAB05400DFAB1D /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = F274313521BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274313821BAB05400DFAB1D /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = F274313721BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274313A21BAB05400DFAB1D /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = F274313921BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274313C21BAB05400DFAB1D /* Kingfisher-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-Demo.app";
+			remoteRef = F274313B21BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274313E21BAB05400DFAB1D /* Kingfisher-tvOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-tvOS-Demo.app";
+			remoteRef = F274313D21BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314021BAB05400DFAB1D /* Kingfisher-macOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-macOS-Demo.app";
+			remoteRef = F274313F21BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314221BAB05400DFAB1D /* Kingfisher-watchOS-Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Kingfisher-watchOS-Demo.app";
+			remoteRef = F274314121BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314421BAB05400DFAB1D /* Kingfisher-watchOS-Demo Extension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = "Kingfisher-watchOS-Demo Extension.appex";
+			remoteRef = F274314321BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314621BAB05400DFAB1D /* KingfisherTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KingfisherTests.xctest;
+			remoteRef = F274314521BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314821BAB05400DFAB1D /* KingfisherTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-tvOS.xctest";
+			remoteRef = F274314721BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F274314A21BAB05400DFAB1D /* KingfisherTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KingfisherTests-macOS.xctest";
+			remoteRef = F274314921BAB05400DFAB1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2DDCC6D21B8F1DE00C01AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDCC7D21B8F1E000C01AD3 /* LaunchScreen.storyboard in Resources */,
+				F2DDCC7A21B8F1E000C01AD3 /* Assets.xcassets in Resources */,
+				F2DDCC7821B8F1DE00C01AD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC8121B8F1E000C01AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC8C21B8F1E000C01AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2DDCC6B21B8F1DE00C01AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28DD19E21BA4DFD007808D5 /* Movie.swift in Sources */,
+				F28DD19821B9A8A5007808D5 /* Utility.swift in Sources */,
+				F274315521BB051700DFAB1D /* UIScrollView+BottomRefreshControl.m in Sources */,
+				F2DDCC7521B8F1DE00C01AD3 /* MovieListViewController.swift in Sources */,
+				F2DDCC7321B8F1DE00C01AD3 /* AppDelegate.swift in Sources */,
+				F274315721BC5AB500DFAB1D /* Rechability.swift in Sources */,
+				F274314F21BAB2F700DFAB1D /* MovieListCollectionViewCell.swift in Sources */,
+				F28DD19B21B9A92C007808D5 /* RequestManager.swift in Sources */,
+				F28DD19321B9A553007808D5 /* CircularLoaderView.swift in Sources */,
+				F28DD19521B9A7AD007808D5 /* LoaderViewController.swift in Sources */,
+				F28DD1A121BA5C93007808D5 /* MovieListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC7F21B8F1E000C01AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29C989421BD96840050E602 /* Rechability.swift in Sources */,
+				F29C989321BD963B0050E602 /* RequestManager.swift in Sources */,
+				F29C989221BD960E0050E602 /* Utility.swift in Sources */,
+				F29C989021BD95E80050E602 /* Movie.swift in Sources */,
+				F29C98A321BD9ECF0050E602 /* CircularLoaderView.swift in Sources */,
+				F29C98B121BD9EE20050E602 /* LoaderViewController.swift in Sources */,
+				F29C98AF21BD9ED40050E602 /* MovieListCollectionViewCell.swift in Sources */,
+				F29C989121BD95F90050E602 /* MovieListPresenter.swift in Sources */,
+				F29C98B221BDA04D0050E602 /* RentoMovieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDCC8A21B8F1E000C01AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDCC9321B8F1E000C01AD3 /* RentoMovieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F274314C21BAB05B00DFAB1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kingfisher-iOS";
+			targetProxy = F274314B21BAB05B00DFAB1D /* PBXContainerItemProxy */;
+		};
+		F2DDCC8521B8F1E000C01AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDCC6E21B8F1DE00C01AD3 /* RentoMovie */;
+			targetProxy = F2DDCC8421B8F1E000C01AD3 /* PBXContainerItemProxy */;
+		};
+		F2DDCC9021B8F1E000C01AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDCC6E21B8F1DE00C01AD3 /* RentoMovie */;
+			targetProxy = F2DDCC8F21B8F1E000C01AD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2DDCC7621B8F1DE00C01AD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DDCC7721B8F1DE00C01AD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2DDCC7B21B8F1E000C01AD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DDCC7C21B8F1E000C01AD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2DDCC9521B8F1E000C01AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2DDCC9621B8F1E000C01AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2DDCC9821B8F1E000C01AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5JN746J8C;
+				INFOPLIST_FILE = RentoMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RentoMovie/Model/RentoMovie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2DDCC9921B8F1E000C01AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5JN746J8C;
+				INFOPLIST_FILE = RentoMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RentoMovie/Model/RentoMovie-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2DDCC9B21B8F1E000C01AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentoMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentoMovie.app/RentoMovie";
+			};
+			name = Debug;
+		};
+		F2DDCC9C21B8F1E000C01AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentoMovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentoMovie.app/RentoMovie";
+			};
+			name = Release;
+		};
+		F2DDCC9E21B8F1E000C01AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentoMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentoMovie;
+			};
+			name = Debug;
+		};
+		F2DDCC9F21B8F1E000C01AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RentoMovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Landmark.RentoMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RentoMovie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2DDCC6A21B8F1DE00C01AD3 /* Build configuration list for PBXProject "RentoMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDCC9521B8F1E000C01AD3 /* Debug */,
+				F2DDCC9621B8F1E000C01AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDCC9721B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDCC9821B8F1E000C01AD3 /* Debug */,
+				F2DDCC9921B8F1E000C01AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDCC9A21B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDCC9B21B8F1E000C01AD3 /* Debug */,
+				F2DDCC9C21B8F1E000C01AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDCC9D21B8F1E000C01AD3 /* Build configuration list for PBXNativeTarget "RentoMovieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDCC9E21B8F1E000C01AD3 /* Debug */,
+				F2DDCC9F21B8F1E000C01AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2DDCC6721B8F1DE00C01AD3 /* Project object */;
+}
