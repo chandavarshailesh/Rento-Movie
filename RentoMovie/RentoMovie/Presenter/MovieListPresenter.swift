@@ -88,11 +88,11 @@ class MovieListPresenter {
                     self.showErrorAlert(error: error as NSError)
                 } else if let reponseDictionary = reponseDictionary {
                     let result = reponseDictionary["results"] as? [[String: Any]] ?? [[String: Any]]()
-                    self.pageIndex = propposedPageIndex
                     
                     let data = try? JSONSerialization.data(withJSONObject: result, options: .prettyPrinted)
                     if let movies = try? JSONDecoder().decode([Movie].self, from: data!) {
                         self.movies =  self.movies + (movies)
+                        self.pageIndex = propposedPageIndex
                     }
                     self.updateCacheWithMovieList(movies: self.movies)
                     completionHandler(self.movies)
